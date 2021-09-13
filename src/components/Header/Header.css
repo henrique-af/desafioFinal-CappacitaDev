@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    position: fixed;
+    font-size: 65px;
+    color:white;
+    background-color: #4BA2E7;
+    font-family: 'Bebas Neue', cursive;   
+    box-shadow: black 0px 1px 5px;
+    z-index: 100;
+}
