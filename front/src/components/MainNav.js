@@ -3,9 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import PopularIcon from '@material-ui/icons/Whatshot';
-import SearchIcon from '@material-ui/icons/Search';
 import PersonIcon from '@material-ui/icons/Person';
-import MovieIcon from '@material-ui/icons/Movie';
 import { useHistory } from 'react-router';
 
 const useStyles = makeStyles({
@@ -27,9 +25,7 @@ export default function SimpleBottomNavigation() {
 
     useEffect(() => {
         if (value === 0) history.push("/");
-        else if (value === 1) history.push("/pesquisar")
-        else if (value === 2) history.push("/login")
-        else if (value === 3) history.push("/todos-filmes")
+        else if (value === 1) history.push("/login")
     }, [value, history]);
 
     return (
@@ -53,26 +49,10 @@ export default function SimpleBottomNavigation() {
                 style={{
                     color: "#4BA2E7"
                 }}
-                label="Pesquisar"
-                icon={<SearchIcon />}
-            />
-
-            <BottomNavigationAction
-                style={{
-                    color: "#4BA2E7"
-                }}
-                label="Log-in"
+                label="Login"
                 icon={<PersonIcon />}
             />
 
-
-            <BottomNavigationAction
-                style={{
-                    color: "#4BA2E7"
-                }}
-                label="Todos os filmes"
-                icon={<MovieIcon />}
-            />
         </BottomNavigation>
     );
 }

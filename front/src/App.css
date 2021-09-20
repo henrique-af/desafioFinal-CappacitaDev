@@ -4,4 +4,9 @@
     color: black;
     padding-top: 140px;
     padding-bottom: 60px;
+    background-color: lightslategray;
+}
+
+* {
+  scroll-behavior: smooth;
 }
